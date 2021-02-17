@@ -1,6 +1,6 @@
 {
     "name": "psk-loadingbar",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Vue component with animated horizontal bar.",
     "author": {
         "name": "Paulo Sergio Klaus",
@@ -16,13 +16,13 @@
     "license": "GPLv3",
     "private": false,
     "scripts": {
-        "build": "vue-cli-service build --target lib --name LoadinBar src/index.js; rm ./dist/demo.html",
+        "build": "vue-cli-service build --target lib --name LoadingBar src/index.js; rm ./dist/demo.html",
         "lint": "vue-cli-service lint"
     },
-    "main": "dist/LoadinBar.umd.js",
-    "browser": "dist/LoadinBar.common.js",
-    "unpkg": "dist/LoadinBar.umd.min.js",
-    "jsDelivr": "dist/LoadinBar.umd.min.js",
+    "main": "dist/LoadingBar.umd.js",
+    "browser": "dist/LoadingBar.common.js",
+    "unpkg": "dist/LoadingBar.umd.min.js",
+    "jsDelivr": "dist/LoadingBar.umd.min.js",
     "files": [
         "dist",
         "src"
