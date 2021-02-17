@@ -57,9 +57,15 @@ new Vue({
 ```
 <template>
     <div>
-        <my-loading-bar :animate="true" />
+        <my-loading-bar :animate="true" :fgClass="my-color" />
     </div>
 </template>
+
+<style>
+.my-color {
+    background-color: red;
+}
+</style>
 ```
 
 ## Properties
@@ -68,6 +74,8 @@ Property | Description | Required | Default
 -|-|-|-
 animate | Start animation | no | yes
 resetOnStop | Clear the bar status when the animation stops  | no | yes
+bgClass | Background CSS class | no | -
+fgClass | Foreground CSS class | no | -
 
 ## Using in the browser
 

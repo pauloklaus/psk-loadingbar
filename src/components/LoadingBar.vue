@@ -1,7 +1,7 @@
 <template>
-    <div class="loading-bar">
-        <div ref="backgroundBar" class="background"></div>
-        <div ref="foregroundBar" class="foreground"></div>
+    <div class="loading-bar" :class="bgClass">
+        <div ref="backgroundBar"></div>
+        <div ref="foregroundBar" :class="fgClass"></div>
     </div>
 </template>
 
@@ -15,6 +15,14 @@ export default {
         resetOnStop: {
             type: Boolean,
             default: true
+        },
+        bgClass: {
+            type: String,
+            default: ""
+        },
+        fgClass: {
+            type: String,
+            default: "loading-bar-foreground"
         }
     },
     data() {
@@ -91,10 +99,7 @@ export default {
     display: flex;
     height: 2px;
 }
-.loading-bar .background {
-    color: #fff;
-}
-.loading-bar .foreground {
-    color: #005;
+.loading-bar-foreground {
+    background-color: #005;
 }
 </style>
