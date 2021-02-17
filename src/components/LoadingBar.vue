@@ -33,6 +33,10 @@ export default {
                 this.stop();
         }
     },
+    created() {
+        if (this.animate)
+            this.start();
+    },
     methods: {
         update() {
             this.$refs.backgroundBar.style.width = this.backgroundBar + "%";
