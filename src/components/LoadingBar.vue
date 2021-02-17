@@ -74,6 +74,9 @@ export default {
         start() {
             this.stop();
             this.timer = setInterval(this.doAnimate, 10);
+        },
+        beforeDestroy() {
+            this.stop();
         }
     }
 }
