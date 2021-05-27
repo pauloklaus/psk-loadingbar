@@ -12,8 +12,9 @@
         "vue",
         "vuejs",
         "effect",
-        "text",
-        "loadingbar"
+        "loadingbar",
+        "loading",
+        "loading-bar"
     ],
     "license": "GPLv3",
     "private": false,
